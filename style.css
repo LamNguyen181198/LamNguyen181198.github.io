@@ -1,0 +1,244 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*--------------------Page 1------------------------*/
+@font-face{
+
+		font-family:"Open Sans";
+		src:url('Fonts/OpenSans-Regular.ttf');
+
+		font-family:"Montserrat Light";
+		src:url('Fonts/Montserrat-Light.ttf.ttf');
+		
+		font-family: "Montserrat Bold";
+		src:url('Fonts/Montserrat-Bold.ttf');
+	}
+
+body
+{
+	background-color: lightskyblue;
+	width:100%;
+	height:800px;
+	text-align: center;
+}
+
+#page1 h1, #page1 h3{
+	font-family: "Montserrat Bold";
+	font-size: 5vw;
+	text-transform:uppercase;
+	text-align: left;
+	padding-top: 400px;
+	padding-left: 9%;
+	max-width: 30%;
+	
+}
+
+#page1 h3{
+	font-family:"Open Sans";
+	font-size: 1.75vw;
+	padding-top:0%;
+	padding-left:12%;
+	text-transform:none;
+}
+
+#page1 a
+{
+	padding-left:5%;
+	padding-top: 10%;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1vw;
+	font-family: "Open Sans";
+}
+
+#page1 img
+{
+	padding-right:8%;
+	padding-top:200px;
+	float: right;
+	max-height: auto;
+	max-width: 45%;
+	display: none;
+	object-fit: cover;
+	position:relative;
+}
+
+.fading-img {
+	animation-name: fader;
+	animation-duration: 2s;
+}
+
+.fadout-img{
+	animation-name: fadout;
+	animation-duration: 2s;
+}
+
+
+@keyframes fader
+{
+	from { opacity: 0.0; }
+	to { opacity: 1.0; }
+}
+
+@keyframes fadout
+{
+	from { opacity: 1.0; }
+	to { opacity: 0.0; }
+}
+
+/*----------Page 2---------*/
+
+
+.tablink{
+  font-family:"Montserrat Light";
+  background-color: #555;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 2vw;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+.header-cover{	
+	background-image:url("Pics/welcome.jpg");
+	background-position:0px 33%;
+	background-size:cover;
+	height:150px;
+	background-repeat: no-repeat;
+}
+
+p{
+	text-align:justify ;
+}
+
+#page2 h1{
+	font-family: "Montserrat Bold";
+	font-size: 5vw;
+	text-align:left;
+	color:black;
+	padding-left:5%;
+	padding-top:5%;
+}
+
+#page2 p, #page2 .media{
+	font-family:"Open Sans";
+	font-size:1.4vw;
+	color:black;
+	text-align:justify;
+	width: 45%;
+	padding-left:5%;
+	padding-top:3%;
+}
+
+.small{
+	float:right;
+	max-width:30%;
+	padding-right:8%;
+	padding-top:1%;
+}
+
+#page2 .media{
+	float:left;
+	width:5%;
+	padding-left:0%;
+	padding-right:4%;
+}
+
+#Skills p, .list{
+	text-align:justify;
+	width:40%;
+	float:right;
+	padding-right:5%;
+}
+
+.work{
+	width:40%;
+	float:left;
+	padding-left:6%;
+	padding-top:3%;
+}
+
+
+#Skills h1{
+	text-align:right;
+	padding-right:5%;
+}
+
+footer{
+	position: fixed;		
+	bottom:0;
+	text-align:center;
+	width:100%;
+}
+
+.back-button{
+	float:left;
+	font-family:"Montserrat Light";
+	font-size:1.25vw;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+
+.sassy-link{
+	text-decoration:none;
+}
