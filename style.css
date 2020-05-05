@@ -93,29 +93,20 @@ body
 	padding-top: 10%;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1.5vw;
+	font-size: 1vw;
 	font-family: "Open Sans";
 }
 
 #page1 img
 {
-	padding-right:3%;
+	padding-right:8%;
+	padding-top:200px;
 	float: right;
 	max-height: auto;
-	max-width: 48%;
+	max-width: 45%;
 	display: none;
 	object-fit: cover;
 	position:relative;
-}
-
-#img1{
-	padding-top:200px;
-}
-#img2{
-	padding-top:180px;
-}
-#img3{
-	padding-top:270px;
 }
 
 .fading-img {
@@ -162,6 +153,7 @@ body
 }
 
 .tabcontent {
+  color: white;
   padding: 100px 20px;
   height: 100%;
 }
@@ -249,45 +241,4 @@ footer{
 
 .sassy-link{
 	text-decoration:none;
-}
-
-/*------Page 1 Mobile version--------*/
-@media only screen and (max-width: 375px) {
-  body {
-	  width:100%;
-	  text-align: center;
-	}
-	
-	#page1 img
-{
-	max-height: auto;
-	max-width: 75%;
-	padding-right:11.5%;
-}
-
-	#page1 h1, #page1 h3, #page1 a{
-	font-size: 8vw;
-	text-align: center;
-	padding-top: 400px;
-	padding-left: 24%;
-	max-width: 50%;
-	
-}
-
-#page1 h3{
-	font-size: 3vw;
-	padding-top:0%;
-	padding-left: 26%;
-}
-
-#page1 a
-{
-	padding-left:2%;
-	padding-top: 10%;
-	font-size: 2vw;
-}
-
-#img3{
-	padding-top:200px;
-}
 }
