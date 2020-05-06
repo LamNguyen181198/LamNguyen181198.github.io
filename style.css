@@ -89,7 +89,7 @@ body
 
 #page1 a
 {
-	padding-left:5%;
+	padding-left:4%;
 	padding-top: 10%;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -174,8 +174,15 @@ body
 	background-repeat: no-repeat;
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 p{
 	text-align:justify ;
+	animation: fadein 1s;
+	line-height: 1.25em;
 }
 
 #page2 h1{
@@ -185,6 +192,7 @@ p{
 	color:black;
 	padding-left:5%;
 	padding-top:5%;
+	animation: fadein 1s;
 }
 
 #page2 p, #page2 .media{
@@ -195,6 +203,10 @@ p{
 	width: 45%;
 	padding-left:5%;
 	padding-top:3%;
+}
+
+.small, .work{
+	animation: fadein 1s;
 }
 
 .small{
@@ -232,10 +244,11 @@ p{
 }
 
 footer{
-	position: fixed;		
-	bottom:0;
-	text-align:center;
+	position: fixed;
+	bottom:0;	
 	width:100%;
+	padding-left:80%;
+	font-size:0.25vw;
 }
 
 .back-button{
@@ -247,12 +260,23 @@ footer{
 	color: black;
 }
 
+a:visited.back-button{
+	color:black;
+}
 .sassy-link{
 	text-decoration:none;
 }
 
-/*------Page 1 Mobile version--------*/
-@media only screen and (max-width: 375px) {
+a:hover{
+	color: darkblue;
+}
+a:visited{
+	color: blue;
+}
+
+/*------Mobile version--------*/
+@media screen and (max-width: 375px) {
+/*-----Page 1------*/
   body {
 	  width:100%;
 	  text-align: center;
@@ -275,6 +299,7 @@ footer{
 }
 
 #page1 h3{
+	font-family:"Open Sans";
 	font-size: 3vw;
 	padding-top:0%;
 	padding-left: 26%;
@@ -282,12 +307,14 @@ footer{
 
 #page1 a
 {
+	font-family:"Open Sans";
 	padding-left:2%;
 	padding-top: 10%;
 	font-size: 2vw;
+}
 }
 
 #img3{
 	padding-top:200px;
 }
-}
+
