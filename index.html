@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Well Hello There!</title>
+	<meta charset="UTF-8" />
+	<link href="style.css" type="text/css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=3.0">
+</head>
+
+<body id="page1">
+	<div class="salutations">
+		<img class="salutations-img" id="img1" src="Pics/welcome.jpg">
+		<img class="salutations-img" id="img2" src="Pics/eye.jpg">
+		<img class="salutations-img" id="img3" src="Pics/hehehe.jpg">
+	</div>
+	<div class="Saluation-text">
+		<h1>Salutation!</h1>
+		<h3>And Welcome To My Little Website</h3>
+	
+	<br />
+		<a class="link" href="index2.html">Yes, this is a very simple front page, Just Click me!</a>
+		</div>
+</body>
+
+<script>
+
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		prevIndex = myIndex;
+		const currentImg = document.getElementsByClassName("salutations-img")[prevIndex];
+
+		currentImg.style.display = 'block';
+		currentImg.classList.remove('fading-img');
+		currentImg.classList.remove('fadout-img');
+		currentImg.classList.add('fading-img');
+
+		setTimeout(() => {
+			currentImg.classList.remove('fadout-img');
+			currentImg.classList.remove('fading-img');
+			currentImg.classList.add('fadout-img');
+		}, 4000);
+
+		setTimeout(() => {
+			currentImg.style.display = 'none';
+		}, 5000);
+
+		myIndex++;
+		if (myIndex >= 3) {
+			myIndex = 0
+		}
+		setTimeout(carousel, 5000);
+	}
+</script>
+
+</html>
