@@ -1,92 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 
-     <head> 
-			<meta charset="UTF-8" />
-           <title>Hello There!</title> 
-			<link href="style2.css" rel="stylesheet" type="text/css" /> 
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-     </head>
-     
-     <body> 
-		<div class="mobile-container" id="page2">
-			<header>
-				<a href="index.html"><img id="logo" src="/Pics/Ha.jpg"></a>
-				<div id="myNav" class="overlay">
-			
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			
-					<div class="overlay-content">
-						<a href="index2.html">About</a>
-						<a href="index3.html">My Skillsets</a>
-						<a target="_blank" href="https://www.facebook.com/mewjoker"><img class="media" src="/Pics/facebook.png"
-								alt="facebook"></a>
-						<a target="_blank" href="https://twitter.com/Meowjoker"><img class="media" src="/Pics/twitter.png"
-								alt="twitter"></a>
+<head>
+	<meta charset="UTF-8" />
+	<title>What Do We Have Here?</title>
+	<link href="style2.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="mobile-container" id="page2">
+		<header>
+			<a href="index.html"><img id="logo" src="/Pics/Ha.jpg"></a>
+			<div id="myNav" class="overlay">
+
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+				<div class="overlay-content">
+					<a href="index2.html">About</a>
+					<a href="index3.html">My Skillsets</a>
+					<div class="social-icons">
+						<a target="_blank" href="https://www.facebook.com/mewjoker"><img class="media"
+								src="/Pics/facebook.png" alt="facebook"></a>
+						<a target="_blank" href="https://twitter.com/Meowjoker"><img class="media"
+								src="/Pics/twitter.png" alt="twitter"></a>
 						<a target="_blank" href="https://www.linkedin.com/in/lam-nguyen-2719a5173/"><img class="media"
 								src="/Pics/linkedin.png" alt="linkedin"></a>
 					</div>
-			
 				</div>
-				<span onclick="openNav()" id="icon">&#9776</span>
-			</header>
 
-			<content>
-				<div id="Home" class="tab-content">
-					<img class="small" src="/Pics/small.jpg">
-					<h1>A Whole Section About Me?</h1>
-					<p>Salutations visitor to my website! My name is Nguyen Tuong Lam. I am State University of New York at Plattsburgh
-						Computer Science graduate student with a minor in Web Design <span id="dots">...</span>
+			</div>
+			<span onclick="openNav()" id="icon">&#9776</span>
+		</header>
+
+		<content>
+			<div id="Home" class="tab-content">
+				<img class="small" src="/Pics/small.jpg">
+				<h1>A Whole Section About Me?</h1>
+				<p>Salutations visitors to my website! My name is Nguyen Tuong Lam. I am State University of New York at
+					Plattsburgh
+					<b>Computer Science graduate student</b> with a minor in <b>Web Design</b> <span id="dots">...</span>
 					<br />
-						<span id="more">
-					<br />
-					At 22 years of age, I can't say that I am better than anyone. Hell,
-						I don't think I am better than some of my peers. Despite the glaring problem of me being too humble to the point
+					<span id="more">
+						<br />
+						At 22 years of age, I can't say that I am better than anyone. Hell,
+						I don't think I am better than some of my peers. Despite the glaring problem of me being too
+						humble to the point
 						of underselling myself, I am a kind and caring person. I maybe quiet when
 						you first talk to me but as time goes by, I will become friendlier and more energetic
 						person.
-					<br />
-					If you wish to know more about me, I have listed my Facebook, Twitter and LinkedIn
+						<br />
+						If you wish to know more about me, I have listed my Facebook, Twitter and LinkedIn
 						down below. I will also link my work email right.... <a class="sassy-link"
-							href="mailto:ntlam1998@gmail.com">here</a>
-					<br/>
+							href="mailto:ntlam1998@gmail.com"><b>here</b></a>
+						<br />
 					</span><button onclick="myFunction()" id="myBtn">Read more</button>
-					</p>
-				</div>
-				
-			</content>
+				</p>
+			</div>
+		</content>
 
-		</div>
+	</div>
 
-			<script>
-				/* Open when someone clicks on the span element */
-				function openNav() {
-					document.getElementById("myNav").style.width = "100%";
-				}
+	<script>
+		/* Open when someone clicks on the span element */
+		function openNav() {
+			document.getElementById("myNav").style.width = "400px";
+		}
 
-				/* Close when someone clicks on the "x" symbol inside the overlay */
-				function closeNav() {
-					document.getElementById("myNav").style.width = "0%";
-				}
-			</script>
+		/* Close when someone clicks on the "x" symbol inside the overlay */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
 
-			<script>
-				function myFunction() {
-						var dots = document.getElementById("dots");
-						var moreText = document.getElementById("more");
-						var btnText = document.getElementById("myBtn");
+	<script>
+		function myFunction() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
 
-						if (dots.style.display === "none") {
-							dots.style.display = "inline";
-							btnText.innerHTML = "Read more";
-							moreText.style.display = "none";
-						} else {
-							dots.style.display = "none";
-							btnText.innerHTML = "Read less";
-							moreText.style.display = "inline";
-						}
-					}
-			</script>
-      </body>
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				moreText.style.display = "inline";
+			}
+		}
+	</script>
+</body>
 
 </html>

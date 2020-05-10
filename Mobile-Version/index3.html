@@ -1,95 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-     <head> 
-			<meta charset="UTF-8" />
-           <title>Hello There!</title> 
-			<link href="style2.css" rel="stylesheet" type="text/css" /> 
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-     </head>
-     
-     <body> 
-		<div class="mobile-container" id="page2">
-			<header>
-				<a href="index.html"><img id="logo" src="/Pics/Ha.jpg"></a>
-				<div id="myNav" class="overlay">
-			
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-			
-					<div class="overlay-content">
-						<a href="index2.html">About</a>
-						<a href="index3.html">My Skillsets</a>
-						<a target="_blank" href="https://www.facebook.com/mewjoker"><img class="media" src="/Pics/facebook.png"
-								alt="facebook"></a>
-						<a target="_blank" href="https://twitter.com/Meowjoker"><img class="media" src="/Pics/twitter.png"
-								alt="twitter"></a>
+<head>
+	<meta charset="UTF-8" />
+	<title>Uhm...Does Anyone Ever Read This?</title>
+	<link href="style2.css" rel="stylesheet" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="mobile-container" id="page2">
+		<header>
+			<a href="index.html"><img id="logo" src="/Pics/Ha.jpg"></a>
+			<div id="myNav" class="overlay">
+
+				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+				<div class="overlay-content">
+					<a href="index2.html">About</a>
+					<a href="index3.html">My Skillsets</a>
+					<div class="social-icons">
+						<a target="_blank" href="https://www.facebook.com/mewjoker"><img class="media"
+								src="/Pics/facebook.png" alt="facebook"></a>
+						<a target="_blank" href="https://twitter.com/Meowjoker"><img class="media"
+								src="/Pics/twitter.png" alt="twitter"></a>
 						<a target="_blank" href="https://www.linkedin.com/in/lam-nguyen-2719a5173/"><img class="media"
 								src="/Pics/linkedin.png" alt="linkedin"></a>
 					</div>
-			
 				</div>
-				<span onclick="openNav()" id="icon">&#9776</span>
-			</header>
 
-			<content>
-				<div id="Skills" class="tab-content">
-					<img class="work" src="/Pics/workjpg.jpg">
-					<h1>And About My Skill Sets?</h1>
-					<p>
-						As for my abilities and skillsets, I do have some to offer.
-						Being a Computer Science major, at the very least, I know the basic to these programming languages: C++,
-						HTML, CSS, JavaScript and Python. And with me having a minor in Web Design, that also means I have a basic
-						understanding of Photoshop. <span id="dots">...</span>
+			</div>
+			<span onclick="openNav()" id="icon">&#9776</span>
+		</header>
+
+		<content>
+			<div id="Skills" class="tab-content">
+				<img class="work" src="/Pics/workjpg.jpg">
+				<h1>And About My Skill Sets?</h1>
+				<p>
+					As for my abilities and skillsets, I do have some to offer.
+					Being a Computer Science major, at the very least, I know the basic to these programming languages:
+					<b>C++,
+					HTML, CSS, JavaScript and Python</b>. And with me having a minor in Web Design, that also means I have a
+					basic
+					understanding of Photoshop. <span id="dots">...</span>
+					<br />
+					<span id="more">
 						<br />
-						<span id="more">
-						<br />
-						I have also taken a course in learning how to use the game engine Unity. As of this point, my creation in
+						I have also taken a course in learning how to use the game engine <b>Unity</b>. As of this point, my
+						creation in
 						Unity
 						is... weird but also interesting to look at. In my opinion, it is a very solid option for
-						anyone trying to learn about the world of game developement, which was the primary reason I took the course
+						anyone trying to learn about the world of game developement, which was the primary reason I took
+						the course
 						in the
-						first place. If you have any other questions, you are free to contact me through the means I provided on the
+						first place. If you have any other questions, you are free to contact me through the means I
+						provided on the
 						previous tab or you can view my resume right... <a class="sassy-link" target="_blank"
-							href="https://docs.google.com/document/d/1Dm6tTk3Slb9MUQSIwGLR5-Z05PJdLDMa/edit">here</a> .
-					
-					<br />
+							href="https://docs.google.com/document/d/1Dm6tTk3Slb9MUQSIwGLR5-Z05PJdLDMa/edit"><b>here</b></a> .
+
+						<br />
 					</span><button onclick="myFunction()" id="myBtn">Read more</button>
-					</p>
-					
-				</div>
-			</content>
+				</p>
 
-		</div>
+			</div>
+		</content>
 
-			<script>
-				/* Open when someone clicks on the span element */
-				function openNav() {
-					document.getElementById("myNav").style.width = "100%";
-				}
+	</div>
 
-				/* Close when someone clicks on the "x" symbol inside the overlay */
-				function closeNav() {
-					document.getElementById("myNav").style.width = "0%";
-				}
-			</script>
+	<script>
+		/* Open when someone clicks on the span element */
+		function openNav() {
+			document.getElementById("myNav").style.width = "400px";
+		}
 
-			<script>
-				function myFunction() {
-					var dots = document.getElementById("dots");
-					var moreText = document.getElementById("more");
-					var btnText = document.getElementById("myBtn");
+		/* Close when someone clicks on the "x" symbol inside the overlay */
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
 
-					if (dots.style.display === "none") {
-						dots.style.display = "inline";
-						btnText.innerHTML = "Read more";
-						moreText.style.display = "none";
-					} else {
-						dots.style.display = "none";
-						btnText.innerHTML = "Read less";
-						moreText.style.display = "inline";
-					}
-				}
-			</script>
-      </body>
+	<script>
+		function myFunction() {
+			var dots = document.getElementById("dots");
+			var moreText = document.getElementById("more");
+			var btnText = document.getElementById("myBtn");
+
+			if (dots.style.display === "none") {
+				dots.style.display = "inline";
+				btnText.innerHTML = "Read more";
+				moreText.style.display = "none";
+			} else {
+				dots.style.display = "none";
+				btnText.innerHTML = "Read less";
+				moreText.style.display = "inline";
+			}
+		}
+	</script>
+</body>
 
 </html>
