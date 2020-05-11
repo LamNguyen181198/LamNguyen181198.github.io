@@ -50,13 +50,13 @@ table {
 /*-------------------- start editing here ------------------- */
 @font-face{
 		font-family:"Open Sans";
-		src:url('/Fonts/OpenSans-Regular.ttf');
+		src:url('../Fonts/OpenSans-Regular.ttf');
 
 		font-family:"Montserrat Light";
-		src:url('/Fonts/Montserrat-Light.ttf.ttf');
+		src:url('../Fonts/Montserrat-Light.ttf.ttf');
 		
 		font-family: "Montserrat Bold";
-		src:url('/Fonts/Montserrat-Bold.ttf');
+		src:url('../Fonts/Montserrat-Bold.ttf');
   }
   
 b{
@@ -80,6 +80,29 @@ body{
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+@keyframes fader
+{
+	from { opacity: 0.0; }
+	to { opacity: 1.0; }
+}
+
+@keyframes fadout
+{
+	from { opacity: 1.0; }
+	to { opacity: 0.0; }
+}
+
+
+.fading-img {
+	animation-name: fader;
+	animation-duration: 2s;
+}
+
+.fadout-img{
+	animation-name: fadout;
+	animation-duration: 2s;
 }
 
 #img1{
@@ -144,6 +167,8 @@ h3{
 	display:inline-block;
 }
 
+/*-----Page 2-----*/
+
 .work{
 	height:350px;
 	max-width:400px;
@@ -190,6 +215,7 @@ h3{
 #page2 .overlay{
   height:1100px;
 }
+
 /*-------Hamburger Menu----------*/
 /* The Overlay (background) */
 .overlay {
