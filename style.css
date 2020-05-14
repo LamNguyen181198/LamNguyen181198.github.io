@@ -99,6 +99,8 @@ body
 	text-transform: uppercase;
 	font-size: 1.75rem;
 	font-family: "Open Sans";
+	animation: fader;
+	animation-duration: 1.5s;
 }
 
 .link{
