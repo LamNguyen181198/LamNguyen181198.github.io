@@ -14,8 +14,7 @@
 			<div id="myNav" class="overlay">
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 				<div class="overlay-content">
-					<a href="content.html" onclick="onAbout()">About</a>
-					<a href="content.html" onclick="onSkillsets()">My Skillsets</a>
+					<a href="content.html">Click me</a>
 					<div class="social-icons">
 						<a target="_blank" href="https://www.facebook.com/mewjoker">
 							<img class="media" src="Pics/facebook.png" alt="facebook">
@@ -30,7 +29,7 @@
 				</div>
 			</div>
 
-			<button onclick="openNav()" >
+			<button onclick="openNav()">
 				<span id="icon">&#9776</span>
 			</button>
 		</header>
@@ -57,9 +56,8 @@
 	function openNav() {
 		document.getElementById("myNav").style.width = "100vw";
 	}
-
 	function closeNav() {
-		document.getElementById("myNav").style.width = "0px";
+		document.getElementById("myNav").style.width = "0vw";
 	}
 </script>
 
@@ -95,17 +93,7 @@
 	}
 </script>
 
-<script>
-	function onAbout() {
-		openPage('Home')
-		closeNav()
-	}
 
-	function onSkillsets() {
-		openPage('Skills')
-		closeNav()
-	}
-</script>
 
 
 </html>

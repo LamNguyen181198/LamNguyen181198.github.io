@@ -137,7 +137,7 @@ p{
 
 #page2 p, #page2 .media{
 	font-family:"Open Sans";
-	font-size:1.4vw;
+	font-size:1.5vw;
 	color:black;
 	text-align:justify;
 	width: 45%;
@@ -212,6 +212,10 @@ a:visited{
 	color: blue;
 }
 
+button{
+	padding-left:3vw;
+	padding-right:3vw;
+}
 /*------------------------------------------Mobile-----------------------------------------*/
 @media only screen and (max-width:600px) {
 	#header-cover, #back-button {
@@ -229,12 +233,15 @@ a:visited{
 		background-color: lightblue;
 	}
 
-	#icon{
+	#icon
+	{
 		float:right;
-		font-size:40px;
+		font-size:55px;
 		cursor:pointer;
 	}
-	img#logo {
+
+	img#logo
+	{
 		display:flex;
 		float:left;
 		max-width:25%;
@@ -314,7 +321,6 @@ a:visited{
 /*------------------------------------Hamburger Menu----------------------------------*/
 /* The Overlay (background) */
 	.overlay {
-		/* height: inherit; */
 		width: 0;
 		height: 100vh;
 		position: fixed; 
@@ -336,13 +342,12 @@ a:visited{
 	/* The navigation links inside the overlay */
 	.overlay a {
 		font-family: "Montserrat Bold";
-		text-transform: uppercase;
 		padding: 8px;
 		text-decoration: none;
-		font-size: 15vw;
 		color: #818181;
 		display: block; 
 		transition: 0.3s; 
+		font-size: 3rem !important;
 	}
 
 	.overlay .media{
@@ -356,9 +361,9 @@ a:visited{
 	/* Position the close button (top right corner) */
 	.overlay .closebtn {
 		position: absolute;
-		top: 20px;
-		right: 45px;
-		font-size: 60px;
+		top: 0px;
+		right: 10px;
+		font-size: 4rem !important;
 	}
 
 	.social-icons {

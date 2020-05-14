@@ -177,24 +177,29 @@ body
 		animation-duration: 1s;
 	}
 
-	#mobile_header{
+	#mobile_header
+	{
 		display: flex;
 		flex-direction: row;
 		background-color: lightblue;
 	}
 
-	#icon{
+	#icon
+	{
 		float:right;
-		font-size:40px;
+		font-size:55px;
 		cursor:pointer;
 	}
-	img#logo {
+
+	img#logo
+	{
 		display:flex;
 		float:left;
 		max-width:25%;
 	}
 	
-	#page1 h1, #page1 h3{
+	#page1 h1, #page1 h3
+	{
 		text-align:center;
 		max-width:100%;
 		color: white;
@@ -245,10 +250,15 @@ body
 	{
 		padding:0;
 	}
+
+	button{
+		padding-left:3vw;
+		padding-right:3vw;
+	}
 	/*-------------------------------Hamburger Menu-------------------------------*/
 	/* The Overlay (background) */
 	.overlay {
-		width: 100vw;
+		width: 0;
 		height: 100vh;
 		position: fixed; 
 		z-index: 10; 
@@ -271,7 +281,6 @@ body
 		font-family: "Montserrat Bold";
 		padding: 8px;
 		text-decoration: none;
-		font-size: 15vw;
 		color: #818181;
 		display: block; 
 		transition: 0.3s; 
@@ -288,9 +297,9 @@ body
 	/* Position the close button (top right corner) */
 	.overlay .closebtn {
 		position: absolute;
-		top: 20px;
-		right: 45px;
-		font-size: 60px;
+		top: 0px;
+		right: 10px;
+		font-size: 4rem !important;
 	}
 
 	.social-icons {
