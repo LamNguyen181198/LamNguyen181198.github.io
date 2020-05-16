@@ -170,7 +170,7 @@ body
 	.page1{
 		flex-direction:column;
 		height:812px;
-		justify-content: space-around;
+		justify-content: space-between;
 	}
 
 	#Home, #Skills
