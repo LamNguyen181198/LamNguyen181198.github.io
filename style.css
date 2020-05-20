@@ -169,7 +169,7 @@ body
 {
 	.page1{
 		flex-direction:column;
-		height:812px;
+		height:100vh;
 		justify-content: space-between;
 	}
 
@@ -197,7 +197,7 @@ body
 	{
 		display:flex;
 		float:left;
-		max-width:25%;
+		max-width:35%;
 	}
 	
 	#page1 h1, #page1 h3
